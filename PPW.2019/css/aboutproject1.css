@@ -1,0 +1,9 @@
+/* aceste stiluri sunt pentru pagina About Project */
+
+.img-responsive{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 30px;
+}

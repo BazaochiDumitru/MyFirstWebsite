@@ -1,0 +1,59 @@
+/* aceste stiluri sunt pentru pagina Home */
+
+.homeimg {
+    padding-top: 100px;
+    height: 500px;
+    width: auto;
+    padding-left: 20%;
+}
+
+
+.maindiv {
+    width: 65%;
+    height: 580px;
+    /* position: relative;
+    left: 50%;
+    top: 300px;
+    transform: translate(-50%, -50%); */
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/setup5.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 5px white;
+    animation: slider 15s infinite linear;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(../images/setup5.jpg);
+    }
+
+    35% {
+        background-image: url(../images/setup6.jpg);
+    }
+
+    75% {
+        background-image: url(../images/setup7.jpg);
+    }
+}
+
+/* ..................  Footer  ..................  */
+
+
+
+
+
+
+
+/* ............. Responsive  .............*/
+
+@media(min-width: 992px) {}
+
+@media(min-width: 768px) and (max-width: 991px) {}
+
+@media(min-width: 575px) and (max-width: 767px) {}
+
+@media(min-width: 480px) and (max-width: 574px) {}
+
+@media screen and (max-width: 700px) {}

@@ -1,0 +1,34 @@
+/* aceste stiluri sunt pentru pagina Read More About Monitor*/
+
+.monitor {
+    margin: 5%;
+    border: 2px solid white;
+}
+
+.img-responsive {
+    height: auto;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+}
+
+.monitor p {
+    font-size: 18px;
+    color: aliceblue;
+    padding-top: 35px;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+h2{
+    padding-top: 50px;
+}
+
+.monitor p strong{
+    font-size: 30px;
+}
