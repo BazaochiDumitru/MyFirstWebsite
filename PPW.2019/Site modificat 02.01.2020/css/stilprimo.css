@@ -1,0 +1,559 @@
+/* ========================================= aceste stiluri sunt pentru toate documentele ============================================*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Шапка страницы*/
+
+/*header {
+
+}*/
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/oh.jpg");
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-right: 50px;
+}
+/*Float- in care parte se afla elemetele */
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a {
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img {
+    width: 125px;
+    height: auto;
+}
+
+.main {
+    background-color: black;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 70px;
+    z-index: 1;
+}
+
+.title {
+    /* border: 1px solid red; */
+    text-align: center;
+    width: 99%;
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.title p {
+    color: white;
+    padding: 0 30px;
+}
+
+p {
+    color: aliceblue;
+    padding-top: 35px;
+    text-align: center;
+}
+
+section h2 {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
+/* ..................  Footer  ..................  */
+
+.footer {
+    background-color: #061634;
+    color: #6479a2;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    text-align: center;
+    column-count: 3;
+    clear: both;
+}
+
+.footer p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+p.footer__name {
+    font-size: 28px;
+    margin-bottom: 10px;
+    line-height: normal;
+    font-family: 'Merriweather', serif;
+}
+
+p.footer__social {
+    color: #FFF;
+}
+
+p.footer__social-icons {
+    color: #FFF;
+    font-size: 32px;
+}
+
+p.footer__social-icons a {
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+p.footer__social-icons a:last-child {
+    margin-right: 0;
+}
+
+p.footer__social-icons a:hover {
+    color: #FFF400;
+}
+
+.button {
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+
+    display: inline-block;
+
+    border-width: 2px;
+    border-color: #FFF;
+    border-style: solid;
+
+    border-radius: 50px;
+
+    padding: 8px 23px;
+
+    margin-bottom: 13px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    color: #061634;
+    background-color: white;
+}
+
+a i.fa {
+    font-size: 25px;
+    text-align: center;
+    display: block;
+}
+
+/* ======================================= aceste stiluri sunt pentru pagina Home ============================================*/
+
+.homeimg {
+    padding-top: 100px;
+    height: 500px;
+    width: auto;
+    padding-left: 20%;
+}
+
+.maindiv {
+    width: 65%;
+    height: 600px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/setup5.jpg");
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 5px white;
+    animation: slider 15s infinite linear;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url("../images/setup5.jpg");
+    }
+
+    25% {
+        background-image: url("../images/setup3.jpg");
+    }
+
+    50% {
+        background-image: url("../images/setup6.jpg");
+    }
+
+    75% {
+        background-image: url("../images/setup7.jpg");
+    }
+
+    100% {
+        background-image: url("../images/setup4.jpg");
+    }
+}
+
+/* ================================== aceste stiluri sunt pentru pagina About Project ===================================== */
+
+.img-responsive1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 30px;
+}
+
+/* ================================== aceste stiluri sunt pentru pagina Internal Components ================================= */
+
+#internal h2 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+    margin: 20px;
+}
+
+#internal p {
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    margin: 50px;
+}
+
+.single-blog {
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    background-color: #00ff99;
+    height: 720px;
+}
+
+.single-blog img {
+    width: 90%;
+    height: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.blog-meta {
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 2px;
+    color: black;
+}
+
+.single-blog span {
+    float: right;
+    font-size: 12px;
+    color: black;
+}
+
+.blog-text {
+    font-size: 14px;
+    text-align: justify;
+    color: black;
+}
+
+.single-blog h2 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #007bff;
+    padding-top: 30px;
+}
+
+.single-blog h2 a {
+    text-decoration: none;
+}
+
+.read-more-btn {
+    background-image: linear-gradient(to right, #1c03b5, #5c8bef);
+    padding: 5px 12px 8px;
+    border-radius: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #fff;
+    border: none !important;
+}
+
+.read-more-btn:hover {
+    background-image: linear-gradient(to right, #006417, #00b128);
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Si gata */
+
+.gridTest {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin: 10px 15px;
+}
+
+/* ========================== aceste stiluri sunt pentru pagina External Components ===================================== */
+
+/* blog*/
+.latest-news-area {
+    margin-top: 40px;
+}
+
+.section_subtitle {
+    font-size: 20px;
+    color: aliceblue;
+    margin-left: 50px;
+}
+
+h3 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.latest-news-wrap {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-img {
+    position: relative;
+}
+
+.news-img:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    content: "";
+    opacity: 0;
+    transform: scale(.8);
+    transition: all 0.5s;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.latest-news-wrap:hover .news-img:before {
+    opacity: 0.5;
+    transform: scale(1);
+}
+
+.deat {
+    background: #f89406 none repeat scroll 0 0;
+    height: 70px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    padding: 10px;
+}
+
+.deat span {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.news-content {
+    padding: 20px;
+    margin-left: 3px;
+}
+
+.news-content i {
+    font-size: 18px;
+    display: inline-block;
+}
+
+.news-content .fab {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 1px;
+    color: aliceblue;
+}
+
+.news-content .fa-facebook {
+    color: #3b5995;
+}
+
+.news-content .fa-twitter {
+    color: #0084b4;
+}
+
+.news-content .fa-linkedin {
+    color: #0077b5;
+}
+
+.news-content .fa-youtube {
+    color: red;
+}
+
+.news-content .fa-vk {
+    color: #3b5995;
+}
+
+.news-content p {
+    margin-bottom: 15px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.news-content a {
+    font-size: 14px;
+    background-color: #e0ad23;
+    padding: 10px 20px;
+    color: white;
+    transition: all 0.5s ease-in;
+}
+
+.news-content a:hover {
+    font-size: 14px;
+    border: 1px solid #34495e;
+    border-top-right-radius: 20px;
+    background-color: transparent;
+    color: #34495e;
+    text-decoration: none;
+}
+
+/* ===================================== aceste stiluri sunt pentru pagina Read More About Monitor =================================*/
+
+.monitor {
+    margin: 5%;
+    border: 2px solid white;
+}
+
+.img-responsive3 {
+    height: auto;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.monitor p {
+    font-size: 18px;
+    color: aliceblue;
+    padding-top: 35px;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    padding-top: 50px;
+}
+
+.monitor p strong {
+    font-size: 30px;
+}
+
+/* ========================== Login de intrare ==============================*/
+
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 25%;
+    left: 39%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.loginbox h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginbox a:hover{
+    color: #ffc107;
+}
