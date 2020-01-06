@@ -1,0 +1,135 @@
+/* ================   Media queries  =================*/
+@media screen and (max-width: 325px) {
+    .main {
+        height: 130px;
+    }
+    
+    .avatar{
+        top: 120px;
+        left: calc(50% - 30px);
+    }
+}
+
+@media (min-width: 326px) and (max-width: 501px) {
+    .title h1 {
+        font-size: 60px;
+    }
+
+    .maindiv {
+        height: 200px;
+    }
+
+    .footer {
+        column-count: 1;
+    }
+
+    .main {
+        height: 130px;
+    }
+
+    section h2 {
+        font-size: 48px;
+    }
+
+    .gridTest {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .single-blog img {
+        height: 45%;
+    }
+
+    .single-blog {
+        height: 600px;
+    }
+
+    .avatar{
+        top: 120px;
+        left: calc(50% - 50px);
+    }
+}
+
+
+@media (min-width: 502px) and (max-width: 767px) {
+    .row1 {
+        column-count: 1;
+        align-items: center;
+        padding: 20px;
+    }
+    .col-md-4 {
+        padding-bottom: 20px;
+    }
+    .single-blog img {
+        height: 65%;
+    }
+
+    .single-blog {
+        height: 880px;
+    }
+
+    .footer {
+        column-count: 1;
+    }
+
+    .maindiv {
+        height: 400px;
+    }
+
+    .gridTest {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .main {
+        height: 100px;
+    }
+
+    ul {
+        margin-right: 10px;
+    }
+
+    ul li a {
+        padding-top: 5px;
+        margin-top: 20px;
+    }
+
+    ul li a:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    ul li.active a {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .avatar{
+        top: 100px;
+        left: calc(50% - 50px);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .single-blog img {
+        height: 55%;
+    }
+
+    .single-blog {
+        height: 720px;
+    }
+
+    .footer {
+        column-count: 1;
+    }
+
+    .maindiv {
+        height: 500px;
+    }
+
+    .gridTest {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+}
