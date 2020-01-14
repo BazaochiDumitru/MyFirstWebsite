@@ -8,12 +8,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Шапка страницы*/
-
-/*header {
-
-}*/
-
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/oh.jpg");
     height: auto;
@@ -22,48 +16,49 @@ body {
     background-attachment: fixed;
 }
 
-ul {
-    float: right;
-    list-style-type: none;
-    margin-right: 50px;
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
 }
-/*Float- in care parte se afla elemetele */
-
-ul li {
-    display: inline-block;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 25px;
-    border: 1px solid transparent;
-    transition: 0.6s ease;
-}
-
-ul li a:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-ul li.active a {
-    background-color: #fff;
-    color: #000;
-}
-
-.logo img {
-    width: 125px;
+.logo {
+    width: 105px;
     height: auto;
 }
-
-.main {
-    background-color: black;
-    align-items: center;
+header nav {
+    float: right;
+}
+header nav ul {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    height: 70px;
-    z-index: 1;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+header nav ul li a:active,
+header nav ul li a:hover {
+    color: #fff;
+    background: #2196f3;
+}
+.menu-toggle {
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
 }
 
 .title {
@@ -230,7 +225,11 @@ a i.fa {
 }
 
 .galerie {
-    margin: 10px 50px;
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
 }
 
 .galerie img {
@@ -510,8 +509,8 @@ h2 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    position: absolute;
-    top: 50px;
+    position: relative;
+    top: -30px;
     left: calc(50% - 50px);
 }
 

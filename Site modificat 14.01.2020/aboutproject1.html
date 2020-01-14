@@ -8,41 +8,25 @@
         <link rel="stylesheet" href="css/media.css" type="text/css">
         <link rel="stylesheet" href="css/lightbox.min.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/5b6ac98f77.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
     </head>
 
     <body>
         <header>
-            <div class="main">
-                <div class="logo">
-                    <!--logo-ul meu-->
-                    <img alt="logo" src="images/logosetup.png">
-                    <!--Bara de navigatie mai jos-->
-                </div>
+            <img class="logo" alt="logo" src="images/logosetup.png">
                 <nav>
                     <ul>
-                        <li>
-                            <a href="indexmain1.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="aboutproject1.html">About Project</a>
-                        </li>
-                        <li>
-                            <a href="internal1.html">Internal</a>
-                        </li>
-                        <li>
-                            <a href="external1.html">External</a>
-                        </li>
-                        <li>
-                            <a href="singin.html">Sign-in</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact me</a>
-                        </li>
+                        <li><a href="indexmain1.html">Home</a></li>
+                        <li><a href="aboutproject1.html">About Project</a></li>
+                        <li><a href="internal1.html">Internal</a></li>
+                        <li><a href="external1.html">External</a></li>
+                        <li><a href="singin.html">Sign-in</a></li>
+                        <li><a href="#contact">Contact me</a></li>
                     </ul>
                 </nav>
-            </div>
+                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
         </header>
         <section>
             <div class="title">
@@ -74,13 +58,14 @@
         </section>
 
         <section>
+            <h2>Super cool gaming computer setup</h2>
             <div class="galerie">
-                <a href="images/setup12.jpg" data-lightbox="mygallery" data-title="This is a gaming computer setup"><img src="images/setup12-small.jpg"></a>
-                <a href="images/setup8.jpg" data-lightbox="mygallery" data-title="This is a gaming computer setup"><img src="images/setup8-small.jpg"></a>
-                <a href="images/setup9.jpg" data-lightbox="mygallery" data-title="This is a gaming computer setup"><img src="images/setup9-small.jpg"></a>
-                <a href="images/setup10.jpg" data-lightbox="mygallery" data-title="This is a gaming computer setup"><img src="images/setup10-small.jpg"></a>
-                <a href="images/setup6.jpg" data-lightbox="mygallery" data-title="This is a gaming computer setup"><img src="images/setup6-small.jpg"></a>
-                <a href="images/setup13.jpg" data-lightbox="mygallery" data-title="This is a gaming computer setup"><img src="images/setup13-small.jpg"></a>
+                <a href="images/setup12.jpg" data-lightbox="mygallery" data-title="This is a gaming computer setup"><img src="images/setup12-small.jpg" alt="computer"></a>
+                <a href="images/setup8.jpg" data-lightbox="mygallery" data-title="This is a gaming computer setup"><img src="images/setup8-small.jpg" alt="computer"></a>
+                <a href="images/setup9.jpg" data-lightbox="mygallery" data-title="This is a gaming computer setup"><img src="images/setup9-small.jpg" alt="computer"></a>
+                <a href="images/setup10.jpg" data-lightbox="mygallery" data-title="This is a gaming computer setup"><img src="images/setup10-small.jpg" alt="computer"></a>
+                <a href="images/setup6.jpg" data-lightbox="mygallery" data-title="This is a gaming computer setup"><img src="images/setup6-small.jpg" alt="computer"></a>
+                <a href="images/setup13.jpg" data-lightbox="mygallery" data-title="This is a gaming computer setup"><img src="images/setup13-small.jpg" alt="computer"></a>
             </div>
         </section>
 
@@ -118,7 +103,14 @@
             <p>
                 Scrieți-mi ca sa stiți detaliile unui upgrade sau<br>posibilitatea de a asambla un PC nou.</p>
         </footer>
-
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.menu-toggle').click(function(){
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script>
     </body>
 
 </html>
